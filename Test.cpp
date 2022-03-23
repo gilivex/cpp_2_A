@@ -15,7 +15,7 @@ TEST_CASE("good writing") {
 	CHECK(my_notebook.read(0, 1, 7, Direction::Vertical, 5) == "world");
 
 	CHECK_NOTHROW(my_notebook.write(0, 14, 2, Direction::Horizontal, "Gil"));
-	CHECK(my_notebook.read(0, 14, 2, Direction::Horizontal, 3) == Gil);
+	CHECK(my_notebook.read(0, 14, 2, Direction::Horizontal, 3) == "Gil");
 
 	CHECK_NOTHROW(my_notebook.write(0, 5, 1, Direction::Horizontal, "belgrad"));
 	CHECK(my_notebook.read(0, 5, 1, Direction::Horizontal, 7) == "belgrad");
