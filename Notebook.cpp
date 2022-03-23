@@ -1,10 +1,9 @@
-#pragma once
 #include <iostream>
 #include "Notebook.hpp"
 using namespace ariel;
 using namespace std;
 
-void Notebook::write(unsigned int page, unsigned int row, unsigned int column, Direction dir, string s) {
+void Notebook::write(unsigned int page, unsigned int row, unsigned int column, Direction dir, const std::string& s) {
 
 }
 
