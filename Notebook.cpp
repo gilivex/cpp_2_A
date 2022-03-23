@@ -8,7 +8,7 @@ void Notebook::write(unsigned int page, unsigned int row, unsigned int column, D
 }
 
 string Notebook::read(unsigned int page, unsigned int row, unsigned int column, Direction dir, unsigned int chars) {
-	return "ssdg";
+    return "ssdg";
 }
 
 void Notebook::erase(unsigned int page, unsigned int row, unsigned int column, Direction dir, unsigned int chars) {

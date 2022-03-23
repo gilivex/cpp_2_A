@@ -13,21 +13,21 @@ namespace ariel {
 	*/
 
 
-	class Notebook {
-		private:
-			
-			std::unordered_map<unsigned int,std::pair<unsigned int, unsigned int>> borders;
-			std::unordered_map<std::string, char> my_nootbook;
-			
+    class Notebook {
+    private:
 
-		public:
-			Notebook() {};
-			~Notebook() {};
+        std::unordered_map<unsigned int,pair<unsigned int, unsigned int>> borders;
+        std::unordered_map<std::string, char> my_nootbook;
 
-			void write(unsigned int page, unsigned int row, unsigned int column, ariel::Direction dir,const std::string& s);
-			std::string read(unsigned int page, unsigned int row, unsigned int column, ariel::Direction dir, unsigned int chars);
-			void erase(unsigned int page, unsigned int row, unsigned int column, ariel::Direction dir, unsigned int chars);
-			void show(unsigned int page);
 
-	};
+    public:
+        Notebook() {};
+        ~Notebook() {};
+
+        void write(unsigned int page, unsigned int row, unsigned int column, ariel::Direction dir,const std::string& s);
+        std::string read(unsigned int page, unsigned int row, unsigned int column, ariel::Direction dir, unsigned int chars);
+        void erase(unsigned int page, unsigned int row, unsigned int column, ariel::Direction dir, unsigned int chars);
+        void show(unsigned int page);
+
+    };
 }
